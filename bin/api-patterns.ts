@@ -6,4 +6,5 @@ require('dotenv').config();
 
 const app = new cdk.App();
 const envUSA = {account: process.env.ACCOUNT, region: process.env.REGION}
+
 new ApiPatternsStack(app, 'ApiPatternsStack', {env: envUSA});
